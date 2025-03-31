@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 3rem;
+}
+
+.accordion-item {
+    width: 400px;
+    margin-bottom: 10px;
+}
+
+.accordion-header {
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    background-color: grey;
+    border: none; 
+    text-align: left; 
+    width: 100%; 
+    font-size: 16px; 
+}
+
+.accordion-body {
+    display: none;
+    padding: 10px;
+    background-color: lightgrey;
+    color: black;
+}
+
+.accordion-open .accordion-body {
+    display: block;
+}
